@@ -45,3 +45,9 @@ include(":native-activity")
 // cpp-swift example
 include(":hello-cpp-swift:swift-lib")
 include(":hello-cpp-swift:app")
+
+// shared-swift-package example
+include(":shared-swift-package-shared-lib-android")
+project(":shared-swift-package-shared-lib-android").projectDir = file("shared-swift-package/shared-lib-android")
+include(":shared-swift-package-shared-app")
+project(":shared-swift-package-shared-app").projectDir = file("shared-swift-package/shared-app")
