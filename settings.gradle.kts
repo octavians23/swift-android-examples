@@ -45,3 +45,9 @@ include(":native-activity")
 // cpp-swift example
 include(":hello-cpp-swift:swift-lib")
 include(":hello-cpp-swift:app")
+
+// shared-logic cross-platform Swift package example
+include(":shared-logic")
+project(":shared-logic").projectDir = file("shared-logic")
+include(":shared-logic-android-app")
+project(":shared-logic-android-app").projectDir = file("shared-logic-android-app")
