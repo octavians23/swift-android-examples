@@ -17,6 +17,8 @@ import org.junit.Test
 import org.junit.Assert.*
 
 class ExampleUnitTest {
+    // SharedLogic JNI functions require a loaded native library and must be tested
+    // as instrumented tests on an Android device. See ExampleInstrumentedTest.kt.
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
